@@ -1,0 +1,94 @@
+<div class="maincontainer">
+    <div class="header-box">
+      <div class="header-heading">
+          <h3 class="addcourse"><label> Add Course </label></h3>
+      </div>
+      <div class="header-content">
+        <div class="course">
+   
+    <form class="course-form"> 
+       <!-- mgrid -->
+  
+     <!-- mgrid-->
+  <mat-grid-list cols="3" rowHeight="75px">
+      <mat-grid-tile>
+         <mat-form-field class="courseform">
+        <mat-select placeholder="Course Name">
+          <mat-option *ngFor="let course of courses" [value]="course.value">
+            {{ course.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> 
+    </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-form-field class="courseform">
+              <mat-select placeholder="Select Time" disableRipple>
+                <mat-option value="1"> 8am - 10am</mat-option>
+                <mat-option value="2">2pm - 4pm</mat-option>
+                <mat-option value="3">7pm - 9pm</mat-option>
+              </mat-select>
+            </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-radio-group class="courseform">
+              <mat-radio-button value="1">Online</mat-radio-button>
+              <mat-radio-button value="2">Offline</mat-radio-button>
+            </mat-radio-group>
+  
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-form-field class="courseform">
+              <mat-select placeholder="Select Duration" disableRipple>
+                <mat-option value="1"> 45 Days</mat-option>
+                <mat-option value="2"> 60 Days</mat-option>
+                <mat-option value="3"> 90 Days</mat-option>
+              </mat-select>
+            </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-form-field class="courseform">
+              <mat-select placeholder="Select Start Date" disableRipple>
+                <mat-option value="1"> April 1st</mat-option>
+                <mat-option value="2">  April 10th</mat-option>
+                <mat-option value="3">  April 15th</mat-option>
+              </mat-select>
+            </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-form-field class="courseform">
+              <textarea matInput placeholder="Description"></textarea>
+            </mat-form-field>
+      </mat-grid-tile>
+  
+      
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      
+      <mat-grid-tile class="courseform">
+          <button mat-button> Submit </button>
+        
+      </mat-grid-tile>
+          
+    </mat-grid-list>
+  
+      <!-- end mgrid-->
+
+ 
+   </form>
+  </div> 
+  
+      </div>
+    </div>
+  
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

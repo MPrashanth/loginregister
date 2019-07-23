@@ -1,0 +1,154 @@
+<div class="maincontainer">
+
+
+  <div class="logo">
+      
+  </div>
+ 
+
+<div class="topbar">
+ 
+  <div class="topbar-right">
+
+      
+      <!-- <img src="../../assets/myphoto.jpg" alt="myphoto" width="40px" height="40px"> -->
+    
+     
+      <button class="right" mat-button [matMenuTriggerFor]="menu" >Welcome</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Settings</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+      
+
+  </div>
+
+  <div class="topbar-left">
+    <h1 class="heading"> <label> STUDENTS MANAGEMENT </label>  </h1>
+  </div>
+
+ </div>  
+
+
+<div class="leftbar menu" [@nani]="sample">
+  <input type="button" value="prashanth"   (click)="prashanth();"> 
+      <div>
+        <!-- <h3 class="headding"> <label> Main Menu   </label> </h3> -->
+        
+        
+      </div>
+    
+  <mat-nav-list>
+    <a mat-list-item routerLink="/account/mydashboard"><i class="material-icons icon">dashboard</i> My Dashboard </a>
+  </mat-nav-list>
+  <mat-nav-list>
+  <a mat-list-item routerLink="/account/courses"><i class="material-icons">book</i> Courses </a>
+  </mat-nav-list>
+  <mat-nav-list>
+  <a mat-list-item routerLink="/account/students"><i class="material-icons">group</i> Students </a>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a mat-list-item routerLink="/account/reports"><i class="material-icons">report</i> Reports </a>
+  </mat-nav-list>
+
+  <!-- <div class="ps__rail-y" style="top: 200px; right: 0px; height: 281px;">
+    <div class="ps__thumb-y" tabindex="0" style="top: 64px; height: 90px;"></div>
+  </div> -->
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+  <!-- <div class="box1">box1
+      
+  </div>
+  <div class="box2">box2</div> 
+  <div class="box3">box3</div>
+  <div class="box4">box4</div>
+  <div class="box5">box5</div>
+  <div class="box6">box6</div>
+  <div class="box7">box7</div>
+</div> -->
+ 
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+  <h2>Admin Dashboard</h2>
+<div class="dashboard">
+  <div>
+    <input type="button" class="btn btn-primary" value="Courses" (click) = "courses();">
+    <input type="button" class="btn btn-primary" value="Student Login" (click) = "studentlogin();">
+    <input type="button" class="btn btn-primary" value="Settings" (click) = "settings();">
+
+  </div>
+
+</div>
+</div> -->

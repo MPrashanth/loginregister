@@ -1,0 +1,78 @@
+<div class="maincontainer">
+  <form class="addcourse_form" [formGroup]="AddCourseForm" (ngSubmit)="onSubmit(AddCourseForm.value)">
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Id" formControlName="id">
+</mat-form-field>
+
+<!-- <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field> -->
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Status" formControlName="status">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your username" formControlName="username">
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" formControlName="password">
+    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+</mat-form-field>
+
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="Type" formControlName="type">
+</mat-form-field>
+<div>
+    <input type="button" class="btn btn-success" value="AddCourse"  (click)= "addcourse();">
+</div>
+</form>
+</div>
+
+
+
+<!-- <form class="admin-form" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)"> -->
+                            
+    <!-- Username -->
+
+<!-- <mat-form-field class="adminform">
+<input matInput placeholder="Enter your username" formControlName="username" 
+class="form-control" [errorStateMatcher]="matcher">
+
+<mat-error class="errormessage">  
+<span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched">Please enter Username !!!</span>  
+</mat-error>
+
+</mat-form-field> -->
+
+
+        <!-- Password -->
+
+<!-- <mat-form-field class="adminform">
+<input matInput placeholder="Enter your password" formControlName="password" class="form-control"
+[errorStateMatcher]="matcher" [type]="hide ? 'password' : 'text'">
+<mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+<mat-error class="errormessage">  
+<span *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">Please enter Password !!!</span>  
+</mat-error>
+</mat-form-field>
+
+<div class="forgot">
+
+<mat-checkbox>Remember me!</mat-checkbox>
+
+
+<a class="forgotpwd" routerLink="\Forgot Password" (click)="forgotpassword">Forgot password?</a>
+
+</div><br>
+
+<div class="pull-right loginbtn">
+
+<input type="button" class="btn btn-success" value="Submit" (click) = "login();">
+</div> -->
+
+
+<!-- </form> -->

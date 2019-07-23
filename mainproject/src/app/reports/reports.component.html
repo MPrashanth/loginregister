@@ -1,0 +1,25 @@
+<div class="main">
+  <div class="topbar">
+    <h1 class="heading"><label> Reports </label></h1>
+  </div>
+  <div class="leftbar menu">
+    <h2 class="reports"><label>Sub Menu</label></h2>
+
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/reports/studentreport"> Student Report </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/account/reports/attendancereport"> Attendance Report </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/account/reports/coursereport"> Course Report </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/account/reports/graphicalreport">Graphical Report </a>
+    </mat-nav-list>
+
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

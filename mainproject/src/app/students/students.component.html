@@ -1,0 +1,21 @@
+<div class="main">
+  <div class="topbar">
+    <h1 class="heading"><label>Students</label></h1>
+  </div>
+  <div class="leftbar submenu">
+      <h3 class="sub-headding"><label>Sub Menu</label>   </h3>
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/students/addstudent"><i class="material-icons">add</i>  Add Student </a>
+    </mat-nav-list>
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/students/viewstudent"><i class="material-icons">pageview</i>  View Student </a>
+    </mat-nav-list>
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/students/editstudent"><i class="material-icons">edit</i>  Edit Student </a>
+    </mat-nav-list>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+      

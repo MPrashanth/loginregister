@@ -1,0 +1,53 @@
+
+  
+.studentform {
+    width: 80%;
+  }
+.addstudent{
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(87, 86, 86);
+  padding-left: 40px;
+  padding-bottom: 3px;
+  }
+.maincontainer{
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  grid-template-areas: "header-box";
+  height: 600px;
+  
+}
+.header-box{
+  
+  grid-area: header-box;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  grid-template-areas: "header-heading" "header-content";
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 300px;
+  border: solid 2px #ddeaf7;
+}
+.header-heading{
+  grid-area: header-heading;
+  background-color:#ddeaf7;
+}
+.header-content{
+  grid-area: header-content;
+  background-color: #fafafa;
+}
+.button-row .btn{
+  border-radius: 0px;
+   width: 120px;
+   border: none;
+   margin-top: 10px; 
+}
+.button-row .btn-success {
+  color: rgb(7, 2, 2);
+  background-color: rgb(170, 204, 219);
+  box-shadow: 0px 0px 4px 0px rgb(194, 174, 194);
+  margin-bottom: 15px; 
+}

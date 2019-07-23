@@ -1,0 +1,93 @@
+<div class="main">
+  <div class="topbar">
+    <h1 class="heading"><label>Courses</label></h1>
+  </div>
+ 
+  <div class="leftbar menu">
+
+
+    
+       <h3 class="course"><label> Sub Menu </label> </h3> 
+    
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/courses/addcourse"><i class="material-icons">add</i> Add Course </a>
+    </mat-nav-list>
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/courses/viewcourse"><i class="material-icons">pageview</i> View Course </a>
+    </mat-nav-list>
+    <mat-nav-list>
+    <a mat-list-item routerLink="/account/courses/editcourse"><i class="material-icons">edit</i> Edit Course </a>
+    </mat-nav-list>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/account/courses/deletecourse"><i class="material-icons">delete</i> Delete Course </a>
+    </mat-nav-list>
+
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+      
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       <!-- <div class="addmenu">
+          <input class="text" type="text">
+          <input class="menu"type="button" value="Add Course">
+        </div>
+
+        <h3> Select Course </h3>
+
+
+      <mat-selection-list #courses>
+          <mat-list-option *ngFor="let course of typesOfCourses">
+            {{course}}
+          </mat-list-option>
+      </mat-selection-list>
+        
+        <p>
+          Options selected: {{courses.selectedOptions.selected.length}}
+        </p>
+
+
+        
+        <div>
+            <input type="button" class="btn btn-success" value="Submit Course" (click) = "submitcourse();">
+        </div>  
+        -->
+
+          
